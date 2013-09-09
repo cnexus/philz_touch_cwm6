@@ -50,6 +50,12 @@
 #define BOOTLOADER_CMD_ARG "download"
 #endif
 
+// S3 - d2spr - SPH-L710
+#ifdef TARGET_DEVICE_D2PR
+//#define BOARD_UMS_LUNFILE    "/sys/class/android_usb/android0/f_mass_storage/lun0/file"
+#define BOOTLOADER_CMD_ARG "download"
+#endif
+
 // n7000
 #ifdef TARGET_DEVICE_N7000
 #define BOARD_UMS_LUNFILE     "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
